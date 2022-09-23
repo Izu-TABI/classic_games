@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <title>CLASSIC GAMES</title>
+</head>
+
+<body>
+
+    <div class="start-page">
+        <div class="proje-title">
+            <h3>CLASSIC GAMES<br></h3>
+        </div>
+
+        <h5 class="heads-up">※このボタンを押すと音が流れます。<br></h5>
+        <h5>また、全体的に小さいと感じた場合は拡大してお楽しみください。<br>
+            MacOS → 「Cmd」+「＋」<br>
+            WindowsOS → 「Ctrl」+「＋」
+        </h5>
+        <button class="start-page-btn">START</button>
+
+    </div>
+
+    <div class="load-page">
+        <audio type="audio/mpeg" src="./audio/Windows98_start-up.mp3"></audio> 
+        <img src="./img/Cloud-wallpaper.jpg">
+    </div>
+
+    <div class="desktop">
+        <div class="window">
+
+            <div class="title-bar">
+                <div class="title-bar-text">CLASSIC GAMES</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Restore" class="btn"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="tutorial-game">
+                <h4 id="js-explanation">Explanation</h4>
+                <div class="tutorial-game-title">
+                    <button class="tutorial-tetoris">Tetoris</button>
+                    <button class="tutorial-snakegame">SnakeGame</button>
+                    <button class="tutorial-minesweeper">Minesweeper</button>
+                </div>
+                <div class="tutorial-game-explan">
+                    <div class="tutorial-game-explan-Tetoris-area">
+                        <h5>ゲーム説明</h5>
+                        <p>テトリミノがフィールド上部からランダムに1つずつ落下してきます<br>
+                            テトリミノを操作しフィールドに敷き詰めると、揃った横一列が消去されます<br>
+                            より長い時間、プレイを続け高いスコアを目指すゲームです<br></p>
+                        <h5>仕様など</h5>
+                        <p>テトロミノは7種類。完全ランダムで生成されます。</p>
+                    </div>
+                    <div class="tutorial-game-explan-SnakeGame-area">
+                        <h5>ゲーム説明</h5>
+                        <p>緑色のヘビに赤色の餌を食べさせ伸ばしていき、画面一杯にヘビが長くなるのを目指すゲームです。</p>
+                        <h5>仕様など</h5>
+                        <p>自分の体に接触した際と画面外に出た時にゲームオーバーとなり最初に戻ります。</p>
+                    </div>
+                    <div class="tutorial-game-explan-Minesweeper-area">
+                        <h5>ゲーム説明</h5>
+                        <p>左クリックでマス目を開いていき、地雷以外すべてを開くとクリアで地雷を開くとゲームオーバーです。<br>
+                            数字があらわしているものは、隣接している8つのマス目に地雷が何個あるか表してます。<br>
+                            爆弾の位置が特定できる場合、 右クリックで旗を立ててマス目を開けないようにしましょう。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="select"><h4 class="select-title" id="js-select">Select</h4></div>
+            <div class="select-box">
+                <select name="game">
+                    <option>1 - Tetoris</option>
+                    <option>2 - SnakeGame</option>
+                    <option>3 - Minesweeper</option>
+                </select>
+                <button class="select-btn">Select</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/desktop.js"></script>
+</body>
+</html>
